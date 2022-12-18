@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Main from "../components/main";
 import Benefits from "../components/benefits";
+import FreeGuide from "../components/freeGuide";
 
 import { initializeApp } from "firebase/app";
 
@@ -45,10 +46,13 @@ function App() {
         <main className='fixed bottom-0 top-0 right-0 left-0 z-[2] overflow-auto'>
           <Main />
           <div
-            className='bg-slate-900/20 backdrop-filter backdrop-blur-lg'
+            className='bg-stone-900/90 backdrop-filter backdrop-blur-lg'
             id='benefits'
           >
             <Benefits />
+          </div>
+          <div className='bg-stone-900/90 backdrop-filter backdrop-blur-lg'>
+            <FreeGuide />
           </div>
         </main>
       </div>
