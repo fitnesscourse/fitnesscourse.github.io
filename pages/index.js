@@ -2,20 +2,7 @@ import Head from "next/head";
 import Main from "../components/main";
 import Benefits from "../components/benefits";
 import FreeGuide from "../components/freeGuide";
-
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyB0uXOaIYXNzvIzzbcBbdyzLpQnn9g4uaM",
-  authDomain: "fitnesscourse-c7e35.firebaseapp.com",
-  projectId: "fitnesscourse-c7e35",
-  storageBucket: "fitnesscourse-c7e35.appspot.com",
-  messagingSenderId: "389798753736",
-  appId: "1:389798753736:web:b121df564400435962bcfd",
-  measurementId: "G-Y84GP0E46T",
-};
-
-const app = initializeApp(firebaseConfig);
+import Resources from "../components/resources";
 
 function App() {
   return (
@@ -51,8 +38,11 @@ function App() {
           >
             <Benefits />
           </div>
-          <div className='bg-stone-900/90 backdrop-filter backdrop-blur-lg'>
+          <div className='bg-stone-800/90 backdrop-filter backdrop-blur-lg'>
             <FreeGuide />
+          </div>
+          <div className='bg-stone-900/90 backdrop-filter backdrop-blur-lg'>
+            <Resources />
           </div>
         </main>
       </div>
